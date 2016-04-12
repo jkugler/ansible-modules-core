@@ -286,7 +286,7 @@ def main():
         'fstype': module.params['fstype']
     }
     if module.params['passno'] is not None:
-        args['passno'] = module.params['passno']
+        args['passno'] = str(module.params['passno'])
     if module.params['opts'] is not None:
         args['opts'] = module.params['opts']
     if module.params['dump'] is not None:
